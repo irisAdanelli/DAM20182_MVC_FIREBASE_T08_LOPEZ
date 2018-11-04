@@ -1,0 +1,7 @@
+{
+  "name": "DAM20182-LOPEZ-U2-T08-ADD-SELECT",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
