@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { ConsultaPage } from '../consulta/consulta';
 import { HomePage } from '../home/home';
+import { FirebaserestProvider} from '../../providers/firebaserest/firebaserest';
 
 /**
  * Generated class for the TabsPage page.
@@ -20,4 +21,6 @@ export class TabsPage {
   tab2Root = ConsultaPage;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
+
+
 }

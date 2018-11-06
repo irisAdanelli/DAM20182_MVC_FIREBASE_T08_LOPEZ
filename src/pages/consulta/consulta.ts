@@ -21,13 +21,25 @@ export class ConsultaPage {
   constructor(
     public navCtrl: NavController,
     private db: FirebaserestProvider,
+
   ) {
-    this.db.obtenerPersonas()
-    .then(personas => {
-      this.personas = personas;
-      console.log(this.personas);
-    })
+
 
   }
+
+  /*ionViewWillEnter(){
+    console.log("ionViewWillEnter")
+    for(let i = 0; i < 100000; i++){
+      console.log(i);
+    }
+  }*/
+    async ionViewDidEnter(){
+        //console.log("ionViewDidEnter")
+        await this.db.obtenerPersonas()
+          .then(personas => {
+            this.personas = personas;
+            console.log("constructor"+this.personas);
+        })
+    }
 
 }
